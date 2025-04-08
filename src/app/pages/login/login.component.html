@@ -1,0 +1,19 @@
+<div class="flex justify-content-center align-items-center min-h-screen w-full">
+  <p-card header="Inicia sesion" class="w-10">
+    <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="flex flex-column gap-2">
+      <div class="field flex flex-column gap-1">
+        <label for="email">Email</label>
+        <input type="text" pInputText formControlName="email" />
+      </div>
+
+      <div class="field flex flex-column gap-1">
+        <label for="password">Password</label>
+        <input type="password" pInputText formControlName="password" />
+      </div>
+
+      <div class="flex gap-2">
+        <p-button label="Login" type="submit"></p-button>
+      </div>
+    </form>
+  </p-card>
+</div>

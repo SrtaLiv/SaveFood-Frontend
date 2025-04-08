@@ -1,0 +1,30 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+a{
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    height: 50px;
+}
+
+
+dialog{
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+  
+  dialog[open] {
+    animation: fadeIn 300ms;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+  .app-home{
+    padding-left: 1rem;
+}

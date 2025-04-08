@@ -1,0 +1,9 @@
+<div class="card flex justify-content-center">
+    <form [formGroup]="formGroup">
+        <p-autoComplete 
+            formControlName="selectedFood"
+            [suggestions]="filteredFoods || []" 
+            (completeMethod)="filterFood($event)" 
+            field="name" />
+    </form>
+</div>

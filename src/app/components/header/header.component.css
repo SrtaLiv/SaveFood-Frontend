@@ -1,0 +1,33 @@
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: #333;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+
+}
+
+.pi pi-plus{
+    background-color: green;
+}
