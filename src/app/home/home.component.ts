@@ -7,11 +7,12 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TableModule } from 'primeng/table';
 import { Food } from '../models/food';
 import { FoodService } from '../services/food.service';
+import { DialogModule } from 'primeng/dialog';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ButtonModule, CardModule, RouterModule, AutoCompleteModule, TableModule],
+  imports: [ButtonModule, CardModule, RouterModule, AutoCompleteModule, TableModule, DialogModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -82,11 +83,10 @@ export class HomeComponent {
     })
   }
 
-
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     const dialog: any = document.querySelector("dialog");
     dialog.style.animationDuration = `${enterAnimationDuration}, ${exitAnimationDuration}`;
-    dialog.showModal();
+    dialog.showModal(); 
   }
 
   closeDialog(): void {

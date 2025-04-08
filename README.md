@@ -1,24 +1,68 @@
-# Frontend Guardador de Comidas
+# Save Food - Frontend
 
+Save Food es una aplicación frontend desarrollada con Angular, diseñada para gestionar comidas e interactuar con un backend Spring Boot. Este proyecto proporciona una interfaz amigable para administrar alimentos con soporte de imágenes a través de Cloudinary.
 
-## Descripción del Proyecto
+## 🚀 Características
+- Autenticación y autorización de usuarios
+- Operaciones CRUD para alimentos
+- Carga y gestión de imágenes con integración Cloudinary
+- Diseño responsive con componentes PrimeNG
+- Sistema de categorización de comidas
 
-Frontend de una aplicacion con Spring Boot + Angular
+## 🛠️ Tecnologías Utilizadas
+- Angular 18
+- TypeScript
+- PrimeNG
+- RxJS
+- Angular Router
 
-## Servidor de Desarrollo
+## 📂 Estructura del Proyecto
+```
+src/
+├── app/
+│   ├── components/    # Componentes reutilizables
+│   ├── home/        # Inicio de la aplicación
+│   ├── models/       # Modelos de datos
+│   ├── pages/        # Componentes de páginas
+│   └── recipes/       # Comidas
+│   ├── services/     # Servicios API
+├── assets/          # Archivos estáticos
+```
 
-Ejecuta `ng serve` para iniciar un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias cualquiera de los archivos fuente.
+## 📄 Componentes Principales
+| Componente | Descripción |
+|-----------|-------------|
+| Home | Muestra todas las comidas categorizadas por tipo |
+| FoodForm | Formulario para crear y editar alimentos |
+| Login | Interfaz de autenticación de usuarios |
+| Register | Interfaz de registro de nuevos usuarios |
 
-## Generación de Código
+## 🔑 Características de Autenticación
+- Registro de usuarios
+- Sistema de inicio de sesión
+- Gestión de tokens JWT
 
-Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📱 Características de la Interfaz
+- Diseño responsive
+- Diseño moderno basado en tarjetas
+- Vista previa y carga de imágenes
+- Diálogos interactivos
+- Notificaciones toast
 
+## ⚠️ Instrucciones de Configuración
+1. Clonar el repositorio
+2. Instalar dependencias:
+```bash
+npm install
+```
+3. Iniciar el servidor de desarrollo:
+```bash
+ng serve
+```
+4. Asegúrate de que el servidor backend esté ejecutándose en `http://localhost:8080`
 
+## 🔗 Integración con Backend
+Esta aplicación frontend está diseñada para trabajar con el backend de Save Food. Puedes encontrar el repositorio del backend en: [SaveFood-Backend](https://github.com/SrtaLiv/SaveFood-Backend)
 
-## Ayuda Adicional
-
-Para obtener más ayuda sobre Angular CLI, usa `ng help` o visita la [Visión General y Referencia de Comandos de Angular CLI](https://angular.dev/tools/cli).
-
-
-## Contribuciones
-
+## 👩‍💻 Autora
+Ana Olivia Todesco | [Instagram](https://www.instagram.com/oliviatodesco) | [LinkedIn](https://www.linkedin.com/in/anaoliviatodesco/) | [YouTube](https://www.youtube.com/@oliviatodesco)

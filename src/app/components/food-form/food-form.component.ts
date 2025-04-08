@@ -104,60 +104,6 @@ export class FoodFormComponent {
     });
   }
 
-  // createFood() {
-  //   if (this.formFood.invalid) {
-  //     this.messageService.add({
-  //       severity: 'error',
-  //       summary: 'Error',
-  //       detail: 'Revisen los campos e intente nuevamente',
-  //     });
-  //     return;
-  //   }
-
-  //   if (!this.selectedFile) {
-  //     this.messageService.add({
-  //       severity: 'error',
-  //       summary: 'Error',
-  //       detail: 'Seleccione una imagen e intente nuevamente',
-  //     });
-  //     return;
-  //   }
-
-  //   const selectedMeal = this.formFood.get('meal')?.value;
-  //   console.log('Selected meal:', selectedMeal);
-
-  //   if (!selectedMeal) {
-  //     this.messageService.add({
-  //       severity: 'error',
-  //       summary: 'Error',
-  //       detail: 'Seleccione una meal e intente nuevamente',
-  //     });
-  //     return;
-  //   }
-
-  //   this.isSaveInProgress = true;
-  //   console.log('Form value:', this.formFood.value);
-  //   this.foodService.createFood(this.formFood.value, this.selectedFile).subscribe({
-  //     next: () => {
-  //       this.messageService.add({
-  //         severity: 'success',
-  //         summary: 'Guardado',
-  //         detail: 'Comida guardada correctamente',
-  //       });
-  //       this.isSaveInProgress = false;
-  //       this.router.navigateByUrl('/');
-  //     },
-  //     error: (e) => {
-  //       this.isSaveInProgress = false;
-  //       this.messageService.add({
-  //         severity: 'error',
-  //         summary: 'Error',
-  //         detail: e.message || 'Revisen los campos e intente nuevamente',
-  //       });
-  //     },
-  //   });
-  // }
-
   createFood() {
     if (this.formFood.invalid) {
       this.messageService.add({
@@ -219,7 +165,7 @@ export class FoodFormComponent {
         this.messageService.add({
           severity: 'success',
           summary: 'Guardado',
-          detail: 'Libro actualizado correctamente',
+          detail: 'Comida actualizado correctamente',
         });
         this.isSaveInProgress = false;
         this.router.navigateByUrl('/');
